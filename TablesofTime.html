@@ -15,7 +15,7 @@
     <body>
 
         <header class="teal" id="top">Tables of Time</header>
-        <div style="text-align: center; background-color: #">
+        <div style="text-align: center;">
             <nav>
                 <h2>Table of Contents</h2>
                 <ul>
@@ -31,111 +31,115 @@
             </nav>
         </div>
         
-        <h3 id="p1">2018 – Mark Hoel invents Poopypants goes to the Rodeo</h3>
-        <img src="https://avatars2.githubusercontent.com/u/13871664?s=460&v=4" width="20%"/>
+            <h3 id="p1">2018 – Mark Hoel invents Poopypants goes to the Rodeo</h3>
+            <img src="https://avatars2.githubusercontent.com/u/13871664?s=460&v=4" width="20%"/>
         
-        <h3 id="p2">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
+        <div style="clear: both">
+            <h3 id="p2">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
 
-        <img src="https://www.supplychain247.com/images/article/3_challenges_for_the_web_wide_image.jpg" width="50%"/>
+            <img src="https://www.supplychain247.com/images/article/3_challenges_for_the_web_wide_image.jpg" width="50%"/>
 
-        <table border="1" style="float: left">
-          <th>Inventor</th><th>Technology</th>
-          <tr>
-             <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
-          </tr>
-          <tr>
-             <td>Håkon Wium Lie</td><td>CSS</td>
-          </tr>
-          <tr>
-             <td>Brenden Eich</td><td>Javascript</td>
-          </tr>
-        </table>
+            <table border="1" style="float: left">
+              <th>Inventor</th><th>Technology</th>
+              <tr>
+                 <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
+              </tr>
+              <tr>
+                 <td>Håkon Wium Lie</td><td>CSS</td>
+              </tr>
+              <tr>
+                 <td>Brenden Eich</td><td>Javascript</td>
+              </tr>
+            </table>
+        </div>
 
         <br>
         
-        <h3 id="p3">1996 - Håkon Wium Lie invents CSS</h3>
+        <div style="clear: both">
+            <h3 id="p3">1996 - Håkon Wium Lie invents CSS</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hakon_Wium_Lie%22.jpg" width="50%px"/>
+            <style>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hakon_Wium_Lie%22.jpg" width="50%px"/>
-        <style>
+                #inventors {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 50%;
+                    margin: auto;
+                    float: left; 
+                }
 
-            #inventors {
-                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                border-collapse: collapse;
-                width: 50%;
-                margin: auto;
-                float: left; 
-            }
+                #inventors td, #inventors th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
 
-            #inventors td, #inventors th {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
+                #inventors tr:nth-child(even){background-color: #223330;}
 
-            #inventors tr:nth-child(even){background-color: #223330;}
+                #inventors tr:hover {background-color: #535559;}
 
-            #inventors tr:hover {background-color: #535559;}
+                #inventors th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: #4CAF50;
+                    color: white;
+                }
 
-            #inventors th {
-                padding-top: 12px;
-                padding-bottom: 12px;
-                text-align: left;
-                background-color: #4CAF50;
-                color: white;
-            }
+            </style>
 
-        </style>
-
-        <table id="inventors" border="1">
-          <th>Inventor</th><th>Technology</th>
-          <tr>
-             <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
-          </tr>
-          <tr>
-             <td>Håkon Wium Lie</td><td>CSS</td>
-          </tr>
-          <tr>
-             <td>Brenden Eich</td><td>Javascript</td>
-          </tr>
-        </table>
+            <table id="inventors" border="1">
+              <th>Inventor</th><th>Technology</th>
+              <tr>
+                 <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
+              </tr>
+              <tr>
+                 <td>Håkon Wium Lie</td><td>CSS</td>
+              </tr>
+              <tr>
+                 <td>Brenden Eich</td><td>Javascript</td>
+              </tr>
+            </table>
+        </div>
 
         <br>
         
-        <h3>1995 - Brenden Eich invents JavaScript</h3>
+        <div style="clear: both">
+            <h3>1995 - Brenden Eich invents JavaScript</h3>
+            <img src="https://www.killadesigns.co/sites/default/files/blog/wpid-brendan-eich.jpg" width="50%">
+            <div id="printmytable"></div>
 
-        <img src="https://www.killadesigns.co/sites/default/files/blog/wpid-brendan-eich.jpg" width="50%">
-        <div id="printmytable"></div>
-        
-        <script>
+            <script>
 
-            function buildmyTable() {
+                function buildmyTable() {
 
-              var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+                  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
 
-              // build a string variable with all the table code and data
-              var mytable = "<table border='1' id='p4'>";
-              mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+                  // build a string variable with all the table code and data
+                  var mytable = "<table border='1' id='p4'>";
+                  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
 
-              // loop through data table to add data
-              for (i = 0; i < inventors.length; i = i + 1) {
-                mytable = mytable + "<tr>";
-                mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
-                mytable = mytable + "</tr>";
-              }
+                  // loop through data table to add data
+                  for (i = 0; i < inventors.length; i = i + 1) {
+                    mytable = mytable + "<tr>";
+                    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+                    mytable = mytable + "</tr>";
+                  }
 
-              mytable = mytable + "</table>";
+                  mytable = mytable + "</table>";
 
-              // get the div and substitute mytable data for it
-              var placetoprint = document.getElementById("printmytable");
-              placetoprint.innerHTML = mytable;
+                  // get the div and substitute mytable data for it
+                  var placetoprint = document.getElementById("printmytable");
+                  placetoprint.innerHTML = mytable;
 
-            }
+                }
 
-            buildmyTable()
+                buildmyTable()
 
-        </script>
+            </script>
 
-        <br>
-        <a href="#top">Back to Top</a>
+            <br>
+            <a href="#top">Back to Top</a>
+        </div>
         
         </body>
 
