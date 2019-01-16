@@ -32,8 +32,7 @@
                 
                 <div class="search">
                     <form action="" style="float: right">
-                        <li><a><input type="text" placeholder="Search..."></a></li>
-                        <li><a><button type="submit"><i class="fa fa-search"></i></button></a></li>
+                        <li><a><input type="text" id="keywords" placeholder="Search..."></a></li>
                     </form>
                     
                     <script>
@@ -176,5 +175,18 @@
         </div>
         
         </body>
+    
+    <script src="https://www.the-art-of-web.com/hilitor.js"></script>
+    <script>
+
+    window.addEventListener("DOMContentLoaded", function(e) {
+        var myHilitor = new Hilitor("playground");
+        myHilitor.setMatchType("left");
+        document.getElementById("keywords").addEventListener("keyup", function(e) {
+        myHilitor.apply(this.value);
+        }, false);
+    }, false);
+
+</script>
     
 </html>

@@ -79,7 +79,8 @@ footer {
 
 .clickimg:hover, .invert:hover {
     opacity: 1.0 !important;
-    transform: scale(0.98);
+    transform: scale(0.97);
+    transition-duration: 0.5s;
 }
 
 .teal { /* Teal Class */
