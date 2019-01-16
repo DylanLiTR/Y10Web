@@ -65,16 +65,16 @@ footer {
     text-align: right;
 }
 
-.invert { /* Image Inverted Colors */
+#invert { /* Image Inverted Colors */
     -webkit-filter: invert(1);
     filter: invert(1);
             
     vertical-align: middle;
 }
 
-.invert:hover {
+.fade:hover {
     opacity: 1.0 !important;
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 .teal { /* Teal Class */
