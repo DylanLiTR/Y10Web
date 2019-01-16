@@ -1,16 +1,12 @@
-nav .selected {
-    font-weight: bold;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
+    align-content: center;
 }
 
 nav {
     float: left;
     width: 25%;
-    font-size: 110%;
     padding: 5px;
 }
 
@@ -25,9 +21,39 @@ container {
     font-family: "Times New Roman", "Arial", sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 110%;
+}
+
+li a:hover {
+    background-color: teal;
+    color: white;
+}
+
+.active {
+    background-color: teal;
+    color: white;
+}
+
 aside {
-    float: right;
+    float: left;
     width: 10%;
+    padding: 5px;
 }
 
 footer {
@@ -48,7 +74,7 @@ footer {
 
 .invert:hover {
     opacity: 1.0 !important;
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .teal { /* Teal Class */
@@ -95,4 +121,52 @@ a {
     width: 100%;
     height: auto;
     }
+}
+
+.menu {
+    float: right;
+    overflow: hidden;
+}
+
+.menu .menu-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: aqua;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 110%;
+    padding: 5px;
+}
+
+.navbar a:hover, .menu:hover .menu-button {
+    background-color: teal;
+    color: white;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    float: none;
+    color: aqua;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-content a:hover {
+    background-color: teal;
+    color: white;
+}
+
+.menu:hover .menu-content {
+    display: block;
 }

@@ -2,11 +2,10 @@
 <html style="background-color: black; color: white">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8"/>
     
     <head>
         
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         
         <title>Tables of Time</title>
         
@@ -14,28 +13,26 @@
         
     <body>
 
-        <header class="teal" id="top">Tables of Time</header>
-        <div style="text-align: center;">
-            <nav>
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="MyGame.html">Java Game</a></li>
-                    <li><a class="selected" href="">Tables of Time</a></li>
-                    <br>
-                    <li><a href="#p1">Mark Hoel</a></li>
-                    <li><a href="#p2">Tim Berners-Lee</a></li>
-                    <li><a href="#p3">Håkon Wium Lie</a></li>
-                    <li><a href="#p4">Brenden Eich</a></li>
-                </ul>
-            </nav>
+        <header class="teal">Tables of Time</header>
+        <div style="background-color: black; position: sticky; top: 0">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="MyGame.html">Java Game</a></li>
+                <li><a class="active" href="">Tables of Time</a></li>
+                
+                <div class="menu">
+                    <button class="menu-button" onclick="drop">Table of Contents</button>
+                    <div class="menu-content">
+                        <li><a href="#p1">Tim Berners-Lee</a></li>
+                        <li><a href="#p2">Håkon Wium Lie</a></li>
+                        <li><a href="#p3">Brenden Eich</a></li>
+                    </div>
+                </div>
+            </ul>
         </div>
         
-            <h3 id="p1">2018 – Mark Hoel invents Poopypants goes to the Rodeo</h3>
-            <img src="https://avatars2.githubusercontent.com/u/13871664?s=460&v=4" width="20%"/>
-        
         <div style="clear: both">
-            <h3 id="p2">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
+            <h3 id="p1">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
 
             <img src="https://www.supplychain247.com/images/article/3_challenges_for_the_web_wide_image.jpg" width="50%"/>
 
@@ -56,7 +53,7 @@
         <br>
         
         <div style="clear: both">
-            <h3 id="p3">1996 - Håkon Wium Lie invents CSS</h3>
+            <h3 id="p2">1996 - Håkon Wium Lie invents CSS</h3>
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hakon_Wium_Lie%22.jpg" width="50%px"/>
             <style>
 
@@ -75,13 +72,13 @@
 
                 #inventors tr:nth-child(even){background-color: #223330;}
 
-                #inventors tr:hover {background-color: #535559;}
+                #inventors tr:hover {background-color: navy;}
 
                 #inventors th {
                     padding-top: 12px;
                     padding-bottom: 12px;
                     text-align: left;
-                    background-color: #4CAF50;
+                    background-color: teal;
                     color: white;
                 }
 
@@ -115,7 +112,7 @@
                   var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
 
                   // build a string variable with all the table code and data
-                  var mytable = "<table border='1' id='p4'>";
+                  var mytable = "<table border='1' id='p3'>";
                   mytable = mytable + "<th>Inventor</th><th>Invention</th>";
 
                   // loop through data table to add data
@@ -142,5 +139,5 @@
         </div>
         
         </body>
-
+    
 </html>
