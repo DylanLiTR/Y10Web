@@ -116,13 +116,6 @@ a {
     color: aqua;
 }
 
-@media (max-width: 720px) {
-    nav, container {
-    width: 100%;
-    height: auto;
-    }
-}
-
 .menu {
     float: right;
     overflow: hidden;
@@ -169,4 +162,17 @@ a {
 
 .menu:hover .menu-content {
     display: block;
+}
+
+@media (max-width: 720px) {
+    nav, container {
+    width: 100%;
+    height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu, .menu-content {
+        float: left;
+    }
 }
