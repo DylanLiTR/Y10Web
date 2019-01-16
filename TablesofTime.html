@@ -6,6 +6,7 @@
     <head>
         
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <title>Tables of Time</title>
         
@@ -21,13 +22,33 @@
                 <li><a class="active" href="">Tables of Time</a></li>
                 
                 <div class="menu">
-                    <button class="menu-button" onclick="drop">Table of Contents</button>
+                    <button class="menu-button" onclick="drop">Table of Contents<i class="fa fa-caret-down"></i></button>
                     <div class="menu-content">
                         <li><a href="#p1">Tim Berners-Lee</a></li>
                         <li><a href="#p2">Håkon Wium Lie</a></li>
                         <li><a href="#p3">Brenden Eich</a></li>
                     </div>
                 </div>
+                
+                <div class="search">
+                    <form action="" style="float: right">
+                        <li><a><input type="text" placeholder="Search..."></a></li>
+                        <li><a><button type="submit"><i class="fa fa-search"></i></button></a></li>
+                    </form>
+                    
+                    <script>
+                      (function() {
+                        var cx = '002454763502926205768:mbbrcsoinsq';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>   
             </ul>
         </div>
         
