@@ -72,6 +72,11 @@ footer {
     vertical-align: middle;
 }
 
+.clickimg {
+    opacity: 0.8;
+    width: 50%;
+}
+
 .clickimg:hover, .invert:hover {
     opacity: 1.0 !important;
     transform: scale(0.98);
@@ -205,5 +210,8 @@ a {
 @media (max-width: 500px) {
     .menu, .menu-content {
         float: left;
+    }
+    .clickimg {
+        width: 100%;
     }
 }
