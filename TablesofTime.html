@@ -51,131 +51,133 @@
             </ul>
         </div>
         
-        <div style="clear: both">
-            <h3 id="p1">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
+        <div id="playground">
+            <div style="clear: both">
+                <h3 id="p1">1989 - Tim Berners-Lee invents the WWW &amp; HTML</h3>
 
-                <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Wikipedia: Tim Berners-Lee">
-                    <img src="https://www.supplychain247.com/images/article/3_challenges_for_the_web_wide_image.jpg" alt="Wikipedia – Tim Berners-Lee" class="clickimg">
-                </a>
+                    <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Wikipedia: Tim Berners-Lee">
+                        <img src="https://www.supplychain247.com/images/article/3_challenges_for_the_web_wide_image.jpg" alt="Wikipedia – Tim Berners-Lee" class="clickimg">
+                    </a>
 
-            <table border="1" style="float: left">
-              <th>Inventor</th><th>Technology</th>
-              <tr>
-                 <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
-              </tr>
-              <tr>
-                 <td>Håkon Wium Lie</td><td>CSS</td>
-              </tr>
-              <tr>
-                 <td>Brenden Eich</td><td>Javascript</td>
-              </tr>
-            </table>
-        </div>
-
-        <br>
-        
-        <div style="clear: both">
-            <h3 id="p2">1996 - Håkon Wium Lie invents CSS</h3>
-            
-                <a href="https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie" title="Wikipedia: Håkon Wium Lie">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hakon_Wium_Lie%22.jpg" alt="Wikipedia – Håkon Wium Lie" class="clickimg">
-                </a>
-            
-            <style>
-
-                #inventors {
-                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                    border-collapse: collapse;
-                    width: 50%;
-                    margin: auto;
-                    float: left; 
-                }
-
-                #inventors td, #inventors th {
-                    border: 1px solid #ddd;
-                    padding: 8px;
-                }
-
-                #inventors tr:nth-child(even){background-color: #223330;}
-
-                #inventors tr:hover {background-color: navy;}
-
-                #inventors th {
-                    padding-top: 12px;
-                    padding-bottom: 12px;
-                    text-align: left;
-                    background-color: teal;
-                    color: white;
-                }
-                
-                @media (max-width: 500px) {
-                    #inventors {
-                        width: 100%;
-                    }
-                }
-
-            </style>
-
-            <table id="inventors" border="1">
-              <th>Inventor</th><th>Technology</th>
-              <tr>
-                 <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
-              </tr>
-              <tr>
-                 <td>Håkon Wium Lie</td><td>CSS</td>
-              </tr>
-              <tr>
-                 <td>Brenden Eich</td><td>Javascript</td>
-              </tr>
-            </table>
-        </div>
-
-        <br>
-        
-        <div style="clear: both">
-            <h3>1995 - Brenden Eich invents JavaScript</h3>
-            
-                <a href="https://en.wikipedia.org/wiki/Brendan_Eich" title="Wikipedia: Brendan Eich">
-                    <img src="https://www.killadesigns.co/sites/default/files/blog/wpid-brendan-eich.jpg" alt="Wikipedia – Brendan Eich" class="clickimg">
-                </a>
-
-            <div id="printmytable"></div>
-
-            <script>
-
-                function buildmyTable() {
-
-                  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
-
-                  // build a string variable with all the table code and data
-                  var mytable = "<table border='1' id='p3'>";
-                  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
-
-                  // loop through data table to add data
-                  for (i = 0; i < inventors.length; i = i + 1) {
-                    mytable = mytable + "<tr>";
-                    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
-                    mytable = mytable + "</tr>";
-                  }
-
-                  mytable = mytable + "</table>";
-
-                  // get the div and substitute mytable data for it
-                  var placetoprint = document.getElementById("printmytable");
-                  placetoprint.innerHTML = mytable;
-
-                }
-
-                buildmyTable()
-
-            </script>
+                <table border="1" style="float: left">
+                  <th>Inventor</th><th>Technology</th>
+                  <tr>
+                     <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
+                  </tr>
+                  <tr>
+                     <td>Håkon Wium Lie</td><td>CSS</td>
+                  </tr>
+                  <tr>
+                     <td>Brenden Eich</td><td>Javascript</td>
+                  </tr>
+                </table>
+            </div>
 
             <br>
-            <a href="#top">Back to Top</a>
+
+            <div style="clear: both">
+                <h3 id="p2">1996 - Håkon Wium Lie invents CSS</h3>
+
+                    <a href="https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie" title="Wikipedia: Håkon Wium Lie">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hakon_Wium_Lie%22.jpg" alt="Wikipedia – Håkon Wium Lie" class="clickimg">
+                    </a>
+
+                <style>
+
+                    #inventors {
+                        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                        border-collapse: collapse;
+                        width: 50%;
+                        margin: auto;
+                        float: left; 
+                    }
+
+                    #inventors td, #inventors th {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                    }
+
+                    #inventors tr:nth-child(even){background-color: #223330;}
+
+                    #inventors tr:hover {background-color: navy;}
+
+                    #inventors th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                        background-color: teal;
+                        color: white;
+                    }
+
+                    @media (max-width: 500px) {
+                        #inventors {
+                            width: 100%;
+                        }
+                    }
+
+                </style>
+
+                <table id="inventors" border="1">
+                  <th>Inventor</th><th>Technology</th>
+                  <tr>
+                     <td>Tim Berners-Lee</td><td>WWW &amp; HTML</td>
+                  </tr>
+                  <tr>
+                     <td>Håkon Wium Lie</td><td>CSS</td>
+                  </tr>
+                  <tr>
+                     <td>Brenden Eich</td><td>Javascript</td>
+                  </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <div style="clear: both">
+                <h3>1995 - Brenden Eich invents JavaScript</h3>
+
+                    <a href="https://en.wikipedia.org/wiki/Brendan_Eich" title="Wikipedia: Brendan Eich">
+                        <img src="https://www.killadesigns.co/sites/default/files/blog/wpid-brendan-eich.jpg" alt="Wikipedia – Brendan Eich" class="clickimg">
+                    </a>
+
+                <div id="printmytable"></div>
+
+                <script>
+
+                    function buildmyTable() {
+
+                      var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+
+                      // build a string variable with all the table code and data
+                      var mytable = "<table border='1' id='p3'>";
+                      mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+
+                      // loop through data table to add data
+                      for (i = 0; i < inventors.length; i = i + 1) {
+                        mytable = mytable + "<tr>";
+                        mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+                        mytable = mytable + "</tr>";
+                      }
+
+                      mytable = mytable + "</table>";
+
+                      // get the div and substitute mytable data for it
+                      var placetoprint = document.getElementById("printmytable");
+                      placetoprint.innerHTML = mytable;
+
+                    }
+
+                    buildmyTable()
+
+                </script>
+
+                <br>
+                <a href="#top">Back to Top</a>
+            </div>
         </div>
-        
+            
         </body>
-    
+    <!--
     <script src="https://www.the-art-of-web.com/hilitor.js"></script>
     <script>
 
@@ -187,6 +189,6 @@
         }, false);
     }, false);
 
-</script>
-    
+    </script>
+    -->
 </html>
