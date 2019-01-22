@@ -193,6 +193,20 @@ a {
     cursor: pointer;
 }
 
+button {
+    color: aqua;
+    background-color: black;
+    padding: 5px;
+    margin: 3px;
+}
+        
+#printme {
+    background-color: teal;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   .menu a, .menu input[type=text] {
     float: none;
