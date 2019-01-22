@@ -59,10 +59,10 @@ var ctx;
 var s = 0;
 var dx = 10;
 var dy = 10;
-var x = 300;
-var y = 200;
 var WIDTH = 26;
 var HEIGHT = 53;
+var x = (window.innerWidth - 10)/2 - WIDTH/2;
+var y = 300 - HEIGHT/2;
 var animation = new Array(
     // Right Facing
 	"yoshi/Right3.png", 
@@ -104,6 +104,8 @@ var animation = new Array(
     "yoshi/Back5.png",
     "yoshi/Back4.png",
 );
+var background = new Image();
+background.src = "waves.png";
 var yoshi = new Image();
 yoshi.src = "yoshi/Front3.png";
 
@@ -133,17 +135,17 @@ function doKeyDown(evt){
 				y -= dy;
                 yoshi.src=animation[(s % 8) + 24];
                 s++;
-                var WIDTH = 26;
-                var HEIGHT = 53;
+                WIDTH = 26;
+                HEIGHT = 53;
 			}
 			break;
 		case 40:  /* Down arrow was pressed */
-			if (y + dy < 600){
+			if (y + dy < 600 - HEIGHT){
 				y += dy;
                 yoshi.src=animation[(s % 8) + 16];
                 s++;
-                var WIDTH = 26;
-                var HEIGHT = 53;
+                WIDTH = 26;
+                HEIGHT = 53;
 			}
 			break;
 		case 37:  /* Left arrow was pressed */
@@ -151,17 +153,17 @@ function doKeyDown(evt){
 				x -= dx;
                 yoshi.src=animation[(s % 8) + 8];
                 s++;
-                var WIDTH = 34;
-                var HEIGHT = 53;
+                WIDTH = 34;
+                HEIGHT = 53;
 			}
 			break;
 		case 39:  /* Right arrow was pressed */
-			if (x + dx < ctx.canvas.width){
+			if (x + dx < ctx.canvas.width - WIDTH){
 				x += dx;
                 yoshi.src=animation[s % 8];
                 s++;
-                var WIDTH = 34;
-                var HEIGHT = 53;
+                WIDTH = 34;
+                HEIGHT = 53;
 			}
 			break;
 		}
@@ -174,6 +176,7 @@ function draw() {
 	ctx.fillStyle = "black";
 	ctx.strokeStyle = "black";
 	rect(0,0,ctx.canvas.width,600);
+    ctx.drawImage(background, 0, 0, ctx.canvas.width-5, ctx.canvas.height);
     ctx.drawImage(yoshi, x, y, WIDTH, HEIGHT);
 }
 
