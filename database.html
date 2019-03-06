@@ -1,0 +1,23 @@
+<html style="background-color: black">
+
+    <canvas id="mycanvas"></canvas>
+
+    <script>
+    
+        var data = [{name: "Tavares", goals: 32}, {name: "Matthews", goals: 24}, {name: "Marner", goals: 20}];
+        
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        
+        for (i = 0; i <= data.length; i++) {
+            ctx.fillStyle = "red";
+            ctx.fillRect(0, i * 40, data[i].goals * 10, 30);
+            
+            ctx.font = "16px";
+            ctx.fillStyle = "white";
+            ctx.fillText(data[i].name, 5, 20 + i * 40);
+        }
+    
+    </script>
+    
+</html>
