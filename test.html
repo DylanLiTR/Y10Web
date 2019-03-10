@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: black; color: aqua">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <title>Dylan Li</title> <!--Title of Page-->
+        
+    </head>
+    
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
     
@@ -125,19 +137,39 @@
     
     </script>
 
-    <body>
-        <button onclick="signin()">Sign in</button>
-        <button onclick="signout()">Sign out</button>
-    
-        <form>
-            Tweet:<br>
-            <textarea id="twit" type="text" name="thetweet" cols="100" rows="4"></textarea>
-        </form> 
-        <button type="button" onclick="tweet()">Submit</button>
+    <body style="color: white">
+        <h1 style="text-align: center; background-color: rgb(30, 40, 40); margin: auto; padding: 3px">Twit Twat
+
+            <button style="float: left" onclick="signin()">Sign in</button>
+            <button style="float: right" onclick="signout()">Sign out</button>
+        </h1>
+        
+        <div style="background-color: black; position: sticky; top: 0; z-index: 1">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="MyGame.html">Java Game</a></li>
+                <li><a href="game.html">JavaScript Game</a></li>
+                <li><a href="">Tables of Time</a></li>
+                <li><a href="test.html" class="active">Twit Twat</a></li>
+            </ul>
+        </div>
+        
+        <div style="float: left; width: 20%; height: 60vh">
+        
+                <div id="mydata"></div>
+                <div id="myphoto"></div>
+        
+        </div>
+        
+        <div style="float: left">
+            <form>
+                Twit:<br>
+                <textarea id="twit" type="text" name="thetweet" cols="60" rows="4"></textarea>
+            </form> 
+            <button type="button" onclick="tweet()">Twit Submit</button>
+        </div>
     
     <div id="mytweets"></div>
-    <div id="mydata"></div>
-    <div id="myphoto"></div>
     </body>
     
 </html>

@@ -90,7 +90,7 @@ footer {
 }
 
 .teal { /* Teal Class */
-    background-color: teal; /* Teal Background */
+    background-color: rgb(30, 40, 40);
     color: white; /* White Text */
     padding: 10px; /* Ten Pixel Padding */
 }
