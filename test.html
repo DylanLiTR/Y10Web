@@ -46,7 +46,7 @@
                 mydiv = document.getElementById("mydata");
                 mydiv.innerHTML = name
                 myphotodiv = document.getElementById("myphoto");
-                myphotodiv.innerHTML = "<img src='" + imageUrl + "'/>";
+                myphotodiv.innerHTML = "<img src='" + imageUrl + "' style='width: 25%; '/>";
 
                 firebase.database().ref('/').once('value').then(function(snapshot) {
                     var data = (snapshot.val());
@@ -154,10 +154,10 @@
             </ul>
         </div>
         
-        <div style="float: left; width: 20%; height: 60vh">
+        <div style="float: left; width: 30%; height: 40vh">
         
                 <div id="mydata"></div>
-                <div id="myphoto" style="max-width: 15%"></div>
+                <div id="myphoto"></div>
         
         </div>
         
