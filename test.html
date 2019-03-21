@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-        <title>Dylan Li</title> <!--Title of Page-->
+        <title>Dylan Li</title>
         
     </head>
     
@@ -46,8 +46,7 @@
                 mydiv = document.getElementById("mydata");
                 mydiv.innerHTML = name
                 myphotodiv = document.getElementById("myphoto");
-                myphotodiv.innerHTML = "<img src='" + imageUrl + "' style='width: 100%;'/>";
-
+                myphotodiv.innerHTML = "<img src='" + imageUrl + "'/>";
                 firebase.database().ref('/').once('value').then(function(snapshot) {
                     var data = (snapshot.val());
                     if (data == null) {
@@ -134,7 +133,7 @@
             firebase.auth().signOut().then(function() {
             });
         }
-
+        
         var modal = document.getElementById('myModal');
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
@@ -185,7 +184,7 @@
                 <span class="close">&times;</span>
                 <form>
                     Twit:<br>
-                    <textarea id="twit" type="text" name="thetweet" cols="60" rows="4"></textarea>
+                    <textarea id="twit" type="text" name="thetweet" cols="100" rows="4"></textarea>
                 </form> 
                 <button type="button" onclick="tweet()">Twit Submit</button>
             </div>
