@@ -134,6 +134,23 @@
             firebase.auth().signOut().then(function() {
             });
         }
+
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
     
     </script>
 
@@ -161,15 +178,20 @@
         
         </div>
         
-        <div style="float: left">
-            <form>
-                Twit:<br>
-                <textarea id="twit" type="text" name="thetweet" cols="60" rows="4"></textarea>
-            </form> 
-            <button type="button" onclick="tweet()">Twit Submit</button>
+        <button id="myBtn">Twit</button>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    Twit:<br>
+                    <textarea id="twit" type="text" name="thetweet" cols="60" rows="4"></textarea>
+                </form> 
+                <button type="button" onclick="tweet()">Twit Submit</button>
+            </div>
         </div>
-    
-    <div id="mytweets" style="width: 60%; word-wrap: break-word"></div>
+        <br>
+        <div id="mytweets" style="word-wrap: break-word; margin-left: 10px; float: left">Text Test</div>
     </body>
     
 </html>
